@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+:root {
+    --primary-color: #60A5FA;
+    --secondary-color: #DBEAFE;
+}
+
+#page-wrapper {
+    min-height: 90vh;
+    margin: 2rem;
+}
+
+.nav-bar {
+    min-height: 5vh;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 1rem;
+}
+
+.main {
+    max-width: 100%;
+    /* min-height: 75vh; */
+    padding: 1rem 2rem;
+}
+
+.main.profit-theme {
+    background-image: url('/Themes/gold-glitter.gif'), url('/Themes/Zig-Zag.svg');
+}
+
+.main.loss-theme {
+    background-image: url('/Themes/lossTheme.gif'), url('/Themes/Rainbow-Vortex.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+}
+
+.output.loss-bg-theme {
+    background-color: red;
+}
+
+.output.profit-bg-theme {
+    background-color: green;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.container .hero {
+    font-size: 2.5rem;
+    margin: 1rem auto;
+    color: white;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+input {
+    max-width: 300px;
+    margin: 0.5rem auto 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+#btn-check, #fetch-btn {
+    display: block;
+    max-width: 200px;
+    margin: 1rem auto 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #2563EB;
+    color: white;
+    cursor: pointer;
+}
+
+.stock-name {
+    padding-top: 0.5rem;
+}
+
+#stockName {
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    padding: 1rem;
+    margin: 0.5rem auto;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.price {
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem auto;
+    color: black;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background: var(--primary-color);
+}
+
+footer .referral {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.link {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color:brown;
+}

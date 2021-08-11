@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <div class="nav-bar">
+        <nav>
+          <div>
+            <img src="/Themes/345103.svg" style="width: 150px; height: 40px" />
+          </div>
+        </nav>
+      </div>
+      <main class="main container profit-loss-theme">
+        <section class="section input">
+          <h1 class="hero">Check Profit/ Loss of Your Stock</h1>
+          <label for="purchase-price">Purchase Price</label>
+          <input type="number" name="purchase-price" id="purchase-price" />
+
+          <label for="stock-quantity">Stock Quantity</label>
+          <input type="number" name="stock-quantity" id="stock-quantity" />
+
+          <label for="current-price">Current Stock Price</label>
+          <input type="number" name="current-price" id="current-price" />
+
+          <button id="btn-check">Check</button>
+        </section>
+
+        <section class="section output">
+          <h3 class="message hide"></h3>
+        </section>
+
+        <label for="stock-name" class="stock-name">Stock Name</label>
+        <input type="text" name="stockName" id="stockName" placeholder="tatamotors"/>
+        <button id="fetch-btn">Get Stock Price</button>
+        <div class="note">Note: The price fetched is 1 day delayed to the current date, as the API refresh their data prior to one day after the market's close...</div>
+        <div class="price hide"></div>
+      </main>
+      <footer>
+        <div class="referral">
+          Open a DEMAT account now with India's no. 1 stock Broker!
+        </div>
+        <div class="link">
+          <a href="https://zerodha.com/?c=LW5971&s=CONSOLE" target="_blank">Click on this link</a>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
